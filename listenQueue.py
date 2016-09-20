@@ -3,7 +3,6 @@ import os
 import commands
 import time
 import sys
-sys.path.append('/Users/zuston/dev/py-dev/py-1/supervisor')
 from tool import configTool
 
 path = '/Users/zuston/dev/py-dev/py-1/112.23.23.34/'

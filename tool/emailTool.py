@@ -130,6 +130,9 @@ if __name__ == '__main__':
     print pop_server
     # sys.exit(1)
 
+    sendMail(from_addr,mail_password,'731673917@qq.com','smtp.sina.cn','hello')
+    sys.exit(1)
+
     gM = partial(getMail,from_addr,mail_password,pop_server)
 
     count = 1
@@ -146,7 +149,7 @@ if __name__ == '__main__':
                 print mailSubject
                 break
         count += 1
-        time.sleep(5)
+        time.sleep(10)
 
 
 

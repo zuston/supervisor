@@ -3,7 +3,6 @@ import os
 import re
 import sys
 import time
-sys.path.append('/Users/zuston/dev/py-dev/py-1/supervisor')
 from service import supervisor
 from tool import configTool
 from tool import emailTool

@@ -4,7 +4,7 @@ import commands
 import time
 import datetime
 import sys
-sys.path.append('/Users/zuston/dev/py-dev/py-1/supervisor')
+sys.path.append('..')
 from tool import emailTool
 from tool import configTool
 
@@ -163,7 +163,7 @@ class supervisor(object):
 
 
 if __name__ == '__main__':
-    sp = supervisor('112.23.23.34',
+    sp = supervisor('112.23.23.31',
                     '/Users/zuston/dev/py-dev/py-1/',
                     '.log',
                     cpu_temp_threshold=50,

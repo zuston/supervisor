@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/Users/zuston/dev/py-dev/py-1/supervisor')
+# sys.path.append('.')
 from service import supervisor
 from tool import configTool
 from tool import emailTool
@@ -12,5 +12,5 @@ threshold = {
     'gpu_temp_threshold': configTool.getConfig('threshold', 'gpu_temp_threshold'),
     'queue_list':configTool.getConfig('queue','queue_file')
 }
-sp = supervisor.supervisor('112.23.23.34', logDir, logSuffix, **threshold)
+sp = supervisor.supervisor('112.23.23.36', logDir, logSuffix, **threshold)
 sp.dataMonitor()
